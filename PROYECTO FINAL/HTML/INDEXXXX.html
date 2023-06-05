@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTICA LA OCHO</title>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" href="../img/zarla-botica-de-la-ocho-1x1-2400x2400-20220404-qqb9hbbdg7rjvwdc83gv.png">
+    <link rel="stylesheet" href="../css/VV.css"><!-- css -->
+    <!-- link fontawesome para iconos sol y luna -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/DARK LIGHT.css">
+
+</head>
+<body>
+  
+	<header class="top-header">
+        <div id="toggle">
+			<input type="checkbox" class="checkbox" id="chk" />
+			<label class="label" for="chk">
+				<i class="fas fa-sun"></i>
+				<i class="fas fa-moon"></i>
+				<div class="ball"></div>
+			</label>
+		</div>
+		<script>
+		const chk = document.getElementById('chk');
+		
+		chk.addEventListener('change', () => {
+			document.body.classList.toggle('dark');
+		});
+		</script>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="../img/zarla-botica-de-la-ocho-1x1-2400x2400-20220404-qqb9hbbdg7rjvwdc83gv.png" alt="" width="100" height="100" class="img-responsive logo"></a>
+				</div>
+
+
+
+
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">TIENDA ONLINE</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> PRODUCTOS</button>
+                    </li>
+                    <li>
+                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> MEDICAMENTOS</button>
+                    </li>
+                    <li>
+                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> BOTIQUIN</button>
+                    </li>
+                    <li>
+                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> CUIDADOS DEL BEBE</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="../HTML/CARRRITO.html"><!-- carrito.html -->
+                            <i class="bi bi-cart-fill"></i> CARRITO <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">BRAYAN TORRES, NATALIA VARGAS, EDISON CAMPEROS © 2023 </p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="../PROYECTO FINAL/js/RIRI.js"></script>
+    <script src="../js/RIRI.js"></script><!-- main.js -->
+</body>
+</html>
